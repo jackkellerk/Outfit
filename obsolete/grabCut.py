@@ -1,5 +1,6 @@
 import numpy as np
 import cv2 as cv
+import tensorflow as tf
 from matplotlib import pyplot as plt
 
 img = cv.imread('rsz_jack.jpg')
