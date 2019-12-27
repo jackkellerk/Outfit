@@ -9,3 +9,4 @@ Created by Jack Kellerk and Stephen Petraitis
 - An image warping algorithm to warp the model's joint points to the user's joint points: Radial Basis Function (in progress...)
    - Source: https://github.com/mathLab/PyGeM
 - An algorithm to swap the head on the user onto the warped model's body: (not started)
+- Then combine everything together! (not started)
