@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
                       ),
                     new ClipOval(
                         child: new Container(
-                          color: Colors.grey,
+                          color: const Color(0xFFE3E3E3),
                           height: 65,
                           width: 65,
                           child: new Center(
@@ -120,7 +120,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -129,7 +129,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -146,7 +146,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -155,7 +155,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -172,7 +172,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -181,7 +181,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -198,7 +198,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -207,7 +207,7 @@ class MyApp extends StatelessWidget {
                           new ClipRRect(
                             borderRadius: BorderRadius.circular(20.0),
                             child: new Container(
-                              color: Colors.grey,
+                              color: const Color(0xFFE3E3E3),
                               height: window.physicalSize.height / 12,
                               width: window.physicalSize.width / 6.5,
                             ),
@@ -215,6 +215,15 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                     ),
+                  ],
+                ),
+              ),
+              new Padding(
+                padding: const EdgeInsets.only(top: 10.0),
+                child: new Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    // Add a row here for all of the icons. i.e. home button, search button, favorites item, etc.
                   ],
                 ),
               ),
