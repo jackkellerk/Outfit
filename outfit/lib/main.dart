@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-void main() => runApp(MyApp());
+// This adds the reusable class, block, for clothing items to be presented to the user
+import 'blockRow.dart';
 
-class MyApp extends StatelessWidget {
+// This calls the build method for the class OutfitApp and displays it on the screen
+void main() => runApp(OutfitApp());
+
+class OutfitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    // Here I'm specifing a list to hold each BlockRow object
+    final blockRowList = <Widget>[];
+
+    // Loop to add multiple rows of blocks to the user's screen
+    for(int i = 0; i < 4; i++) {
+      blockRowList.add(new BlockRow());
+    }
+
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Container(
@@ -111,111 +124,7 @@ class MyApp extends StatelessWidget {
               ),
               new Expanded(
                 child: new ListView(
-                  children: <Widget>[
-                    new Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: new Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    new Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: new Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    new Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: new Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    new Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: new Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-
-                          new ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: new Container(
-                              color: const Color(0xFFE3E3E3),
-                              height: window.physicalSize.height / 12,
-                              width: window.physicalSize.width / 6.5,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+                  children: blockRowList, // This is the variable I created above
                 ),
               ),
               new Padding(
