@@ -17,7 +17,7 @@
 ## BlockRow
 - Purpose: An object, a Flutter row and padding, to hold two Block objects. Used primarily for organization purposes.
 - Arguments: None
-- Dependencies: Block
+- Dependencies: [block.dart](./README.md#block)
 - Location: blockRow.dart
 - Example: `new BlockRow();`
-    - This instanties a row of two Blocks next to each other.
+    - This instanties a row of two [Blocks](./README.md#block) next to each other.
