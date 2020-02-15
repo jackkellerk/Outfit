@@ -20,7 +20,7 @@ class OutfitApp extends StatelessWidget {
     }
 
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Outfit',
       home: Container(
         decoration: new BoxDecoration(color: Colors.white),
         child: new Padding( // Adds margin from the top to seperate the Action Bar from our banner
