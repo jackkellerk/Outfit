@@ -1,5 +1,4 @@
 # Outfit
-Created by Jack Kellerk and Stephen Petraitis
 
 ### Things to do:
 - An image segmentation algorithm to extract the models from the background: Mask RCNN
